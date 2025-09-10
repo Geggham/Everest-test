@@ -1,10 +1,3 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +32,58 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+@media (min-width: 1200px) {
+  #root {
+    padding: 3rem 4rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #root {
+    padding: 2rem 2.5rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  #root {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  #root {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .logo {
+    height: 3em;
+    padding: 0.5em;
+  }
+
+  .card {
+    padding: 0.8em;
+  }
 }
